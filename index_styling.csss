@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{ 
+    background-color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    
+}
+
+.scramble-text {
+    font-family: monospace;
+    transition: all 0.3s ease;
+}
+
+.dud {
+    color: #ffffff;
+}
+
+.nav-buttons{
+    padding: 20px;
+    border-radius: 25px;
+    background: linear-gradient(to right, rgb(0,140,255), rgb(17, 14, 14))
+}
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-brand img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-right: 10px;
+    transform: translateY(8px);
+}
+
+.nav-logo {
+    transform: translateX(-300px);
+    text-decoration: none;
+    color:white ;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+.nav-link:hover {
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 10px;
+    color: black;
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+.nav-item {
+    border: none;
+    color: black;
+}
+p {
+    color: white; 
+    text-align: left;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.intro-container {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center; /* Add this to center horizontally */
+    align-items: center;
+    min-height: 70vh;
+    width: 100%; /* Add this to ensure full width */
+    gap: 3rem; /* Add spacing between elements */
+}
+
+.Border {
+    display: inline-block;
+    padding: 30px;
+    border: 2px solid rgb(0,140,255);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    margin: 0; /* Remove margin to prevent offset */
+    transform: translateY(0); /* Reset any transform */
+}
+
+.Border:hover {
+    box-shadow: 0 0 20px rgb(0,140,255);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.Intro {
+    margin-bottom: 10px;
+}
+.image img {
+    width: 300px;  
+    height: 300px; 
+    border-radius: 50%;  
+    object-fit: cover;   
+    border: 2px solid rgb(0,140,255); /* Optional: adds a border */
+    box-shadow: 0 0 20px rgba(0,140,255, 0.5); /* Optional: adds a glow effect */
+    transition: transform 0.3s ease; 
+}
+
+.image img:hover {
+    transform: scale(1.05); /* Optional: slight zoom on hover */
+    box-shadow: 0 0 50px rgba(0,140,255, 0.7); /* Optional: increased glow on hover */
+    transition: all 0.3s ease;
+}
+
+.Career {
+    color: rgb(0,140,255);
+    font-size: 2rem;
+}
+
+.Border img{ 
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+}
+.Border img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.hgroup {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    min-height: 20vh;  /* Reduced from 70vh */
+    font-size: 2rem;
+    margin-bottom: 2rem;  /* Added margin bottom */
+}
+
+
+.experience_sub {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+article p {
+    font-size: 1rem;  /* Smaller font size for article paragraphs */
+    margin: 0;        /* Remove margin */
+    font-weight: normal;
+}
+
+/* Adjust article layout */
+article {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.FrontEnd-container img {
+    width: 24px;     /* Slightly smaller icons */
+    height: 24px;
+    margin: 0;       /* Remove margin since we're using gap */
+}
+
+.experience_sub1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+/* Add a container to hold both sections */
+.experience-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.FrontEnd-container {
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 2rem;
+    max-width: 500px;
+    border-color: rgb(0,140,255);
+    transition: all 0.3s ease;
+}
+.Front-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    gap: 2rem; /* Space between grid items */
+    margin-top: 1rem; /* Space from the heading */
+}
+
+.Front-info article {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between check icon and text */
+}
+
+.Front-info article div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Space between h1 and paragraph */
+}
+
+/* Adjust heading sizes in articles */
+.Front-info article h1 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.BackEnd-container {
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 2rem;
+    max-width: 500px;
+    margin-left: 0; 
+    border-color: rgb(0,140,255);
+    transition: all 0.3s ease;
+}
+.Back-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    gap: 2rem; /* Space between grid items */
+    margin-top: 1rem; /* Space from the heading */
+}
+
+.Back-info article {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between check icon and text */
+}
+
+.Back-info article div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Space between h1 and paragraph */
+}
+
+/* Adjust heading sizes in articles */
+.Back-info article h1 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.BackEnd-container img {
+    width: 24px;     /* Slightly smaller icons */
+    height: 24px;
+    margin: 0;       /* Remove margin since we're using gap */
+}
+.BackEnd-container:hover {
+    box-shadow: 0 0 20px rgb(0,140,255);
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.FrontEnd-container:hover {
+    box-shadow: 0 0 20px rgb(0,140,255);
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
